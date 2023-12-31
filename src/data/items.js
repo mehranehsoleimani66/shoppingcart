@@ -51,7 +51,7 @@ const productList = [
 
 function getProductData(id) {
   let productData = productList.find((product) => product.id === id);
-  console.log(productData, "pr");
+
   return productData;
 }
 
