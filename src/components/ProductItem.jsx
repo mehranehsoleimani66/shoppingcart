@@ -25,7 +25,10 @@ function ProductItem({ product }) {
                 +
               </button>
               <label>تعداد محصول :{productQuantity}</label>
-              <button className=" text-center border px-3 py-1  border-gray-100  text-white rounded-md">
+              <button
+                onClick={() => cart.removeItemFromCart(product.id)}
+                className=" text-center border px-3 py-1  border-gray-100  text-white rounded-md"
+              >
                 -
               </button>
             </form>
